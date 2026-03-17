@@ -296,6 +296,20 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:999;ba
 </style>
 </head>
 <body>
+<script>
+// Inline router — runs before paint, no flash
+(function() {
+  var path = window.location.pathname.replace(/^\//, '').split('/')[0];
+  var pages = ['home', 'strumenti', 'approfondimenti'];
+  var page = (path && pages.indexOf(path) !== -1) ? path : 'home';
+  document.addEventListener('DOMContentLoaded', function() {
+    pages.forEach(function(p) {
+      var el = document.getElementById('page-' + p);
+      if (el) el.classList.toggle('active', p === page);
+    });
+  });
+})();
+</script>
 
 <!-- NAV -->
 <nav>
@@ -315,7 +329,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:999;ba
   </div>
 </nav>
 
-<div id="page-home" class="page-section active">
+<div id="page-home" class="page-section">
 <!-- HERO -->
 <div class="hero-wrap">
 <section class="hero">
