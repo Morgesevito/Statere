@@ -509,9 +509,10 @@ window.addEventListener('popstate', function(e) {
 
 // Handle initial URL on load
 (function() {
-  var path = window.location.pathname.replace('/', '');
+  var path = window.location.pathname.replace(/^\//, '');
   var page = path && PAGES.indexOf(path) >= 0 ? path : 'home';
   showPage(page);
+  window.history.replaceState({ page: page }, '', window.location.pathname);
 })();
 
 
