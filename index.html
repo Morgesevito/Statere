@@ -508,12 +508,12 @@ window.addEventListener('popstate', function(e) {
 });
 
 // Handle initial URL on load
-(function() {
-  var path = window.location.pathname.replace(/^\//, '');
+window.addEventListener('DOMContentLoaded', function() {
+  var path = window.location.pathname.replace(/^\//, '').split('/')[0];
   var page = path && PAGES.indexOf(path) >= 0 ? path : 'home';
   showPage(page);
   window.history.replaceState({ page: page }, '', window.location.pathname);
-})();
+});
 
 
 // ════════════════════════════════════════════════════════════
