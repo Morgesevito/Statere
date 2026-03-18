@@ -569,8 +569,8 @@ function buildCasaHTML() {
     '<div class="fg" style="margin-bottom:.7rem">' +
       '<label>' + (L ? 'Modalità' : 'Mode') + '</label>' +
       '<div class="tg" id="cs-mode">' +
-        '<button class="on" onclick="cSetMode("solo",this)">' + (L ? 'Singolo' : 'Single') + '</button>' +
-        '<button onclick="cSetMode("coppia",this)">' + (L ? 'Coppia' : 'Couple') + '</button>' +
+        '<button class="on" onclick="cSetMode(\'solo\',this)">' + (L ? 'Singolo' : 'Single') + '</button>' +
+        '<button onclick="cSetMode(\'coppia\',this)">' + (L ? 'Coppia' : 'Couple') + '</button>' +
       '</div>' +
     '</div>' +
 
@@ -633,8 +633,8 @@ function buildCasaHTML() {
     '<div class="fg" style="margin-bottom:.7rem">' +
       '<label>' + (L ? 'Tipo' : 'Type') + '</label>' +
       '<div class="tg" id="cs-tipo">' +
-        '<button class="on" onclick="cSetTipo("usato",this)">' + (L ? 'Usato' : 'Resale') + '</button>' +
-        '<button onclick="cSetTipo("nuovo",this)">' + (L ? 'Nuova costruzione' : 'New build') + '</button>' +
+        '<button class="on" onclick="cSetTipo(\'usato\',this)">' + (L ? 'Usato' : 'Resale') + '</button>' +
+        '<button onclick="cSetTipo(\'nuovo\',this)">' + (L ? 'Nuova costruzione' : 'New build') + '</button>' +
       '</div>' +
     '</div>' +
     '<div id="cw-nuovo" style="display:none" class="info-box">⚡ ' + (L ? 'Calcolo Nuova Costruzione in arrivo.' : 'New Build calculation coming soon.') + '</div>' +
