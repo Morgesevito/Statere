@@ -303,8 +303,8 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:999;ba
   <a href="index.html" class="logo">stat<svg viewBox="0 0 84 100" width="17" height="21" fill="none" style="position:relative;top:1px;margin:0 -1px"><path d="M16 15 C28 9,70 16,70 36 C70 52,54 64,40 70 C30 75,16 78,16 78" stroke="#e8b84b" stroke-width="11.5" stroke-linecap="round" fill="none"/><path d="M20 37 C40 35,58 34,78 36" stroke="#e8b84b" stroke-width="10.5" stroke-linecap="round" fill="none"/><path d="M22 54 C38 53,52 51,68 52" stroke="#e8b84b" stroke-width="10.5" stroke-linecap="round" fill="none"/></svg>re</a>
   <div class="nav-links">
     <a href="index.html#come-funziona" class="nav-link" id="nav-home">Come funziona</a>
-    <a href="strumenti.html" class="nav-link" id="nav-strumenti">Strumenti</a>
-    <a href="approfondimenti.html" class="nav-link" id="nav-approfondimenti">Approfondimenti</a>
+    <a href="strumenti.html" class="nav-link" id="nav-strumenti">Simulatori</a>
+    <a href="approfondimenti.html" class="nav-link" id="nav-approfondimenti">Insights</a>
   </div>
   <div style="display:flex;align-items:center;gap:1rem">
     <div class="lang-toggle">
@@ -369,9 +369,14 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:999;ba
   </div>
 </section>
 
-<footer>
-  <a href="index.html" class="foot-logo" style="display:inline-flex;align-items:center;text-decoration:none;color:#fffafa">stat<svg viewBox="0 0 84 100" width="15" height="18" fill="none" style="position:relative;top:1px;margin:0 -1px"><path d="M16 15 C28 9,70 16,70 36 C70 52,54 64,40 70 C30 75,16 78,16 78" stroke="#e8b84b" stroke-width="11.5" stroke-linecap="round" fill="none"/><path d="M20 37 C40 35,58 34,78 36" stroke="#e8b84b" stroke-width="10.5" stroke-linecap="round" fill="none"/><path d="M22 54 C38 53,52 51,68 52" stroke="#e8b84b" stroke-width="10.5" stroke-linecap="round" fill="none"/></svg>re</a>
-  <div class="foot-note">Simulazioni indicative. Consulta sempre un professionista prima di firmare qualsiasi documento.</div>
+<footer style="border-top:1px solid var(--border);padding:1.5rem 2rem;max-width:100%">
+  <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+    <a href="index.html" style="display:inline-flex;align-items:center;text-decoration:none">
+      <svg viewBox="0 0 84 100" width="32" height="38" fill="none"><path d="M16 15 C28 9,70 16,70 36 C70 52,54 64,40 70 C30 75,16 78,16 78" stroke="#e8b84b" stroke-width="11.5" stroke-linecap="round" fill="none"/><path d="M20 37 C40 35,58 34,78 36" stroke="#e8b84b" stroke-width="10.5" stroke-linecap="round" fill="none"/><path d="M22 54 C38 53,52 51,68 52" stroke="#e8b84b" stroke-width="10.5" stroke-linecap="round" fill="none"/></svg>
+    </a>
+    <div style="font-size:.75rem;color:var(--muted);text-align:center">Simulazioni indicative. Consulta sempre un professionista prima di firmare qualsiasi documento. &nbsp;|&nbsp; <a href="mailto:hello@statere.app" style="color:var(--accent);text-decoration:none">hello@statere.app</a></div>
+    <a href="mailto:hello@statere.app?subject=Partnership Statere" style="background:transparent;border:1px solid var(--border);color:var(--muted);font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:600;padding:.4rem 1rem;border-radius:3px;text-decoration:none;transition:all .15s;white-space:nowrap" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">Partnership</a>
+  </div>
 </footer>
 
 <div class="overlay" id="overlay" onclick="closeOnBg(event)">
